@@ -5,12 +5,10 @@ const lines = input.split('\n')
 let sum = 0
 
 for (let line of lines) {
-  const numbers = line.match(/\d+/g)
+  const numbers = line.match(/\d/g)
 
-  const allNumbers = numbers?.map((number) => number.split('')).flat()
-
-  const firstNumber = allNumbers?.[0] ?? '0'
-  const lastNumber = allNumbers?.[allNumbers.length - 1] ?? '0'
+  const firstNumber = numbers?.[0] ?? '0'
+  const lastNumber = numbers?.[numbers.length - 1] ?? '0'
 
   const fullNumber = parseInt(`${firstNumber}${lastNumber}`)
   console.log(line, fullNumber)
