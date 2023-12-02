@@ -5,5 +5,5 @@ https://adventofcode.com/2023
 To run:
 
 ```bash
-bun run 1/a.ts
+bun run --watch 1/a.ts
 ```
